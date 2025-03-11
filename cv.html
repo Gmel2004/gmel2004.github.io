@@ -7,14 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to right, #013220, #025a30);
+            background: linear-gradient(135deg, #012a1c, #025a30, #038c4c);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
             color: white;
             font-family: 'Poppins', sans-serif;
             max-width: 800px;
             margin: auto;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         h1, h2 {
             text-align: center;
@@ -29,32 +36,8 @@
             border-bottom: 1px solid white;
             padding-bottom: 5px;
         }
-        p, ul {
+        p, div {
             font-size: 16px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 5px;
-            padding-left: 20px;
-            position: relative;
-        }
-        ul li::before {
-            content: '\2022';
-            color: lightblue;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-        a {
-            color: lightblue;
-            text-decoration: none;
-            transition: color 0.3s ease-in-out;
-        }
-        a:hover {
-            color: cyan;
         }
     </style>
 </head>
@@ -66,37 +49,29 @@
     <p><strong>Статус:</strong> Программист-студент</p>
     
     <h2>Языки Программирования</h2>
-    <ul>
-        <li>C#, C++, Java, PascalABC.Net, C, Python, JS</li>
-    </ul>
+    <div>C#, C++, Java, PascalABC.Net, C, Python, JS</div>
     
     <h2>Фреймворки</h2>
-    <ul>
-        <li>ASP.NET Core, Windows Forms, WPF, Qt, Entity Framework</li>
-    </ul>
+    <div>ASP.NET Core, Windows Forms, WPF, Qt, Entity Framework Core, Razor Pages</div>
     
     <h2>Другие технологии</h2>
-    <ul>
-        <li>Git, GitHub</li>
-        <li>MySQL, PostgreSQL, Workbench</li>
-        <li>HTML, CSS - на уровне документации</li>
-        <li>Unit-тестирование</li>
-    </ul>
+    <div>Git, GitHub</div>
+    <div>MySQL, PostgreSQL, Workbench</div>
+    <div>HTML, CSS - на уровне документации</div>
+    <div>Unit-тестирование</div>
     
     <h2>Принципы</h2>
-    <ul>
-        <li>SOLID, DRY, RAII, Occam's razor</li>
-    </ul>
+    <div>SOLID, DRY, RAII, Occam's razor</div>
     
     <h2>Опыт</h2>
-    <p>Создание приложения для автоматизирования бизнес-процессов компании на ASP.NET Core.</p>
+    <p>Создание приложения для автоматизирования бизнес-процессов компании (ASP.NET Core, Entity Framework Core, Razor pages)</p>
     
     <h2>Образование</h2>
     <p>ПНИПУ, Электротехнический Факультет</p>
     <p><strong>Направление:</strong> «Информатика и Вычислительная Техника»</p>
     <p><strong>Профиль:</strong> «Автоматизированные системы интеллектуальной обработки данных и управления»</p>
     <p>(3-й курс обучения)</p>
-    <p><strong>Уровень владения английским языком:</strong> B1</p>
+    <p><strong>Уровень владения английским языком:</strong> A2</p>
     
     <h2>Контактная информация</h2>
     <p><strong>Telegram:</strong> @dobrinf</p>
